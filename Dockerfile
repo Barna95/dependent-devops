@@ -20,6 +20,6 @@ RUN npm install \
 # npm ci will install dependencies from package-lock.json
 RUN npm ci --only=production
 
-EXPOSE 5000
+EXPOSE 3000
 
 CMD [ "node", "index.js" ]
