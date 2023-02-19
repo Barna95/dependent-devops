@@ -9,5 +9,5 @@ app.get('/', (req, res) => {
 
 // Export server for testing.
 const server = app.listen(PORT);
-console.log(`Example... app listening at http://localhost:${PORT}`);
+console.log(`Example app listening at http://localhost:${PORT}`);
 module.exports = server;
