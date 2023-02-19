@@ -11,9 +11,9 @@ WORKDIR /app
 COPY . .
 
 # Update each dependency in package.json to the latest version
-RUN npm install 
-    && npm install -g npm-check-updates 
-    && ncu -u 
+RUN npm install \
+    && npm install -g npm-check-updates \
+    && ncu -u \
     && npm install
 
 # If you are building your code for production
